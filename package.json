@@ -1,0 +1,22 @@
+{
+  "name": "media",
+  "version": "1.0.0",
+  "description": "static",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thichcayvn/media.git"
+  },
+  "keywords": [
+    "thichcay"
+  ],
+  "author": "Fressor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thichcayvn/media/issues"
+  },
+  "homepage": "https://github.com/thichcayvn/media#readme"
+}
