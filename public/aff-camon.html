@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký thành công</title>
+
+  <style>
+    :root {
+      --brand-red: #e53935;
+      --brand-red-dark: #c62828;
+      --bg-light: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg-light);
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+      padding: 40px 28px 32px;
+      border-radius: 20px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+      background: #fff;
+    }
+
+    .logo {
+      margin-bottom: 24px;
+    }
+
+    .logo img {
+      max-height: 70px;
+      width: auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #111;
+    }
+
+    .check {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin: 18px 0 16px;
+      background: rgba(229,57,53,0.08);
+      color: var(--brand-red);
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin: 4px 0;
+    }
+
+    .subtitle strong {
+      color: var(--brand-red);
+    }
+
+    .cta-wrap {
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 13px 30px;
+      border-radius: 999px;
+      background: var(--brand-red);
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 10px 24px rgba(229,57,53,0.35);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-red-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(198,40,40,0.4);
+    }
+
+    .note {
+      font-size: 14px;
+      color: #777;
+      margin-top: 6px;
+    }
+
+    .footer-text {
+      margin-top: 22px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer-text span {
+      color: var(--brand-red);
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px 24px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .btn-primary {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script>
+    // ĐỔI LINK ZALO CỘNG ĐỒNG CỦA BẠN Ở ĐÂY
+    const zaloLink = "https://zalo.me/g/eealnm839";
+
+    // Tự động chuyển hướng sau 5 giây
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        window.location.href = zaloLink;
+      }, 5000); // 5000ms = 5 giây
+    });
+  </script>
+</head>
+<body>
+
+<div class="page">
+  <div class="card">
+    <div class="logo">
+      <img src="https://static.thichcay.com/logo.png" alt="Thích Cay">
+    </div>
+
+    <h1>CẢM ƠN BẠN!</h1>
+    <div class="check">✔</div>
+
+    <p class="subtitle">
+      Yêu cầu mẫu <strong>của bạn</strong> đã được gửi đến đội ngũ chúng tôi
+    </p>
+    <p class="subtitle">
+      Đừng bỏ lỡ các thông tin về chính sách hỗ trợ trong cộng đồng Zalo chính thức nhé.
+    </p>
+
+    <div class="cta-wrap">
+      <a class="btn-primary" href="https://zalo.me/g/eealnm839">
+        Tham gia cộng đồng Zalo
+      </a>
+      <div class="note">
+        Trang sẽ tự động chuyển sang Zalo sau 5 giây...
+      </div>
+    </div>
+
+    <div class="footer-text">
+      Hẹn gặp lại bạn trong <span>cộng đồng Tiếp thị liên kết</span> của Thích Cay 🔥
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
