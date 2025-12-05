@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>PHIẾU XUẤT KHO</title>
+  <style>
+    /* Nếu bạn có file font UTM-Avo, có thể khai báo @font-face như sau:
+    @font-face {
+      font-family: "UTM-Avo";
+      src: url("UTM-Avo.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+    */
+
+    /* Thiết lập khổ giấy A4 khi in */
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: "UTM-Avo", "Times New Roman", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 20mm;
+      box-sizing: border-box;
+      background: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header .line {
+      font-weight: bold;
+    }
+
+    .info-block {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .info-row div {
+      width: 48%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    table, th, td {
+      border: 1px solid #000;
+    }
+
+    th, td {
+      padding: 6px;
+      vertical-align: top;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .footer-sign {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer-sign .col {
+      width: 30%;
+    }
+
+    .footer-sign .col p {
+      margin: 3px 0;
+    }
+
+    .note {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    /* Nút in chỉ hiện trên màn hình, không in ra giấy */
+    .print-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 8px 14px;
+      border: 1px solid #333;
+      background: #f5f5f5;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    @media print {
+      .print-button {
+        display: none;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-button" onclick="window.print()">In phiếu</button>
+
+<div class="page">
+  <!-- PHẦN ĐẦU -->
+  <div class="header">
+    <div class="line">CÔNG TY TNHH TMDV LADOSPICE</div>
+    <div class="line">ĐỊA CHỈ: Số 19 Đường số 28, P. Bình Trưng, TP.HCM</div>
+    <br>
+    <div class="line"><u>PHIẾU XUẤT KHO</u></div>
+  </div>
+
+  <!-- THÔNG TIN CHUNG PHIẾU -->
+  <div class="info-block info-row">
+    <div>
+      <p>Số phiếu: GRATIS2025120430 </p>
+      <p>Bộ phận xuất: Phòng Marketing</p>
+    </div>
+    <div style="text-align:right;">
+      <p>Ngày: 2025/12/04 </p>
+    </div>
+  </div>
+  
+  <div class="info-block">
+    <p>Người nhận hàng: @thaoangi </p>
+    <p>Lý do xuất kho: Sản phẩm mẫu quay video</p>
+    <p>Địa điểm giao hàng: 2290 Chung Cư Thái An, đường Đỗ Mười, phường Trung Mỹ Tây, tpHCM  </p>
+    <p>Số điện thoại:  0374044397 </p>
+  </div>
+
+  <!-- BẢNG INVOICE HÀNG HÓA -->
+<!-- BẢNG 4 CỘT: STT – Mặt hàng – Mã hàng – Số lượng -->
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 8%;">STT</th>
+        <th style="width: 50%;">Mặt hàng</th>
+        <th style="width: 20%;">Mã hàng</th>
+        <th style="width: 22%;">Số lượng</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Bạn điền nội dung sau -->
+      <tr>
+        <td class="center">1</td>
+      <!-- Mặt hàng -->             
+        <td>Sốt gỏi cay 250ml</td>
+      <!-- Mã hàng -->     
+        <td class="center"></td>
+      <!-- Số lượng -->     
+        <td class="center">2</td>
+      </tr>
+
+      <tr>
+        <td class="center">2</td>
+        <td>Muối tiêu lốt 250ml</td>
+        <td class="center"></td>
+        <td class="center">2</td>
+      </tr>
+
+      <tr>
+        <td class="center">3</td>
+        <td></td>
+        <td class="center"></td>
+        <td class="center"></td>
+      </tr>
+
+      <!-- Thêm bao nhiêu dòng tùy ý -->
+
+    </tbody>
+  </table>
+
+  <div class="info-block">
+  </div>
+
+  <!-- CHỮ KÝ -->
+  <div class="footer-sign">
+    <div class="col">
+      <p><b>Người lập phiếu</b></p>
+      <p><i>(Ký, ghi rõ họ tên)</i></p>
+      <br><br><br>
+      <p>Khánh Vy</p>
+    </div>
+    <div class="col">
+      <p><b>Thủ kho</b></p>
+      <p><i>(Ký, ghi rõ họ tên)</i></p>
+      <br><br><br>
+      <p>Trần Vũ Hoàng Minh Trí</p>
+    </div>
+    <div class="col">
+      <p><b>Trưởng bộ phận</b></p>
+      <p><i>(Ký, ghi rõ họ tên)</i></p>
+      <br><br><br>
+      <p>Ngô Tùng Thao</p>
+    </div>
+  </div>
+
+  <p class="note">Ghi chú: Phiếu lưu tại: 01 liên kèm chứng từ kế toán, 01 liên giao khách hàng (nếu cần)...</p>
+</div>
+
+</body>
+</html>
